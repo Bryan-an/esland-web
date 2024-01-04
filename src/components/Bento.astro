@@ -1,0 +1,100 @@
+---
+import BentoItem from './BentoItem.astro';
+---
+
+<section
+  class:list={[
+    'w-full max-w-[1400px]',
+    'grid grid-cols-10 auto-rows-[30rem] gap-4',
+    'mx-auto p-20',
+  ]}
+>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="ANDORRA: THE ZENIT OF THE ESLAND AWARDS"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full
+        bg-[url('/images/mountain.webp')]
+        group-hover:scale-110 transition-transform duration-1000
+        ease-in-ou opacity-90 bg-blend-luminosity bg-center bg-cover
+        bg-no-repeat bg-blue-950 z-0"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-pretty">
+      A new edition <strong>loaded with news</strong> and content, which will
+      begin several weeks before the long-awaited gala. <strong
+        >Special live shows, collaborations, concerts and much more</strong
+      > in what will be a true party dedicated to content creation.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="THE WHITE CARPET"
+    subtitle="February 16, 2024"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full
+        bg-[url('/images/pistas.webp')]
+        group-hover:scale-110 transition-transform duration-1000
+        ease-in-ou opacity-90 bg-blend-luminosity bg-center bg-cover
+        bg-no-repeat bg-blue-950 z-0"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-pretty">
+      This year, the moment of the blue carpet will be replaced and improved,
+      thanks to the incredible Andorran landscapes, by a <strong
+        >white carpet in the snow</strong
+      >, located on the <strong>ski slopes of Andorra</strong>.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="LA GALA"
+    subtitle="February 17, 2024"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full
+        bg-[url('/images/grefposing.webp')]
+        group-hover:scale-110 transition-transform duration-1000
+        ease-in-ou opacity-90 bg-blend-luminosity bg-center bg-cover
+        bg-no-repeat bg-blue-950 z-0"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-pretty">
+      An awards gala full of <strong
+        >top-level content and many surprises</strong
+      >, in which the <strong>winners</strong> of this third edition of the
+      ESLAND Awards.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="ENJOY THE COMMUNITY REDDIT"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full
+        bg-[url('/images/laptop_esland.webp')]
+        group-hover:scale-110 transition-transform duration-1000
+        ease-in-ou opacity-90 bg-blend-luminosity bg-center bg-cover
+        bg-no-repeat bg-blue-950 z-0"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-pretty">
+      This year, reddit will not be part of the awards voting, but <strong
+        >will be part of the community</strong
+      >. The official ESLAND Awards subreddit is open for you, for you to share
+      your clips, your opinions and for <strong
+        >to interact with the entire</strong
+      >
+       Spanish-speaking streaming community.
+    </p>
+  </BentoItem>
+</section>
